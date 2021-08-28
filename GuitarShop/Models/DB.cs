@@ -6,6 +6,7 @@ namespace GuitarShop.Models
     {
         public static List<Product> GetProducts()
         {
+            // Hard-coded list of products
             List<Product> products = new List<Product>
             {
                 new Product
@@ -72,6 +73,7 @@ namespace GuitarShop.Models
             return products;
         }
 
+        // Simple linear search to return product by ID or null if not found
         public static Product GetProduct(string slug)
         {
             List<Product> products = DB.GetProducts();

@@ -1,5 +1,6 @@
 ﻿namespace GuitarShop.Models
 {
+    // Simple data class representing a product
     public class Product
     {
         public int ProductID { get; set; }

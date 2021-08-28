@@ -1,4 +1,5 @@
-﻿@model List<Product>
+﻿<!-- Specify model to get info from -->
+@model List<Product>
 @{
     ViewBag.Title = "Product List";
 }
@@ -12,6 +13,8 @@
         </tr>
     </thead>
     <tbody>
+        <!-- Loop through the list of products -->
+        <!-- Display the product name and price (with two decimal places) -->
         @foreach (var product in @Model)
         {
             <tr>
